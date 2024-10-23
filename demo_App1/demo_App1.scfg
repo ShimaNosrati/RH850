@@ -1238,7 +1238,7 @@
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
-        <Item generateEntity="true" generateFunction="false" id="RS-CANFD_INTRCANGRECC0" interruptHandlerFlag="false" interruptHandlerName="eiint297" oSManagementInterrupt="false" priority="15">
+        <Item generateEntity="true" generateFunction="true" id="RS-CANFD_INTRCANGRECC0" interruptHandlerFlag="false" interruptHandlerName="eiint297" oSManagementInterrupt="false" priority="15">
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
@@ -1262,7 +1262,7 @@
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
-        <Item generateEntity="true" generateFunction="false" id="RS-CANFD_INTRCAN1TRX" interruptHandlerFlag="false" interruptHandlerName="eiint303" oSManagementInterrupt="false" priority="15">
+        <Item generateEntity="true" generateFunction="true" id="RS-CANFD_INTRCAN1TRX" interruptHandlerFlag="false" interruptHandlerName="eiint303" oSManagementInterrupt="false" priority="15">
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
@@ -1286,7 +1286,7 @@
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
-        <Item generateEntity="true" generateFunction="false" id="RS-CANFD_INTRCAN3TRX" interruptHandlerFlag="false" interruptHandlerName="eiint309" oSManagementInterrupt="false" priority="15">
+        <Item generateEntity="true" generateFunction="true" id="RS-CANFD_INTRCAN3TRX" interruptHandlerFlag="false" interruptHandlerName="eiint309" oSManagementInterrupt="false" priority="15">
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
@@ -1298,7 +1298,7 @@
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
-        <Item generateEntity="true" generateFunction="false" id="RS-CANFD_INTRCAN4TRX" interruptHandlerFlag="false" interruptHandlerName="eiint312" oSManagementInterrupt="false" priority="15">
+        <Item generateEntity="true" generateFunction="true" id="RS-CANFD_INTRCAN4TRX" interruptHandlerFlag="false" interruptHandlerName="eiint312" oSManagementInterrupt="false" priority="15">
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
@@ -1334,7 +1334,7 @@
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>
-        <Item generateEntity="true" generateFunction="false" id="RS-CANFD_INTRCAN7TRX" interruptHandlerFlag="false" interruptHandlerName="eiint321" oSManagementInterrupt="false" priority="15">
+        <Item generateEntity="true" generateFunction="true" id="RS-CANFD_INTRCAN7TRX" interruptHandlerFlag="false" interruptHandlerName="eiint321" oSManagementInterrupt="false" priority="15">
             <Item Enabled="false" checked="true" id="PE0"/>
             <Item Enabled="false" checked="false" id="PE1"/>
         </Item>

@@ -3,5 +3,7 @@ DefaultBuild/
 .vscode/
 /demo_App1/*.txt
 /demo_App1/DefaultBuild/
-/demo_App2/DefaultBuild/
+/demo_App1/trash/
 /demo_App2/*.txt
+/demo_App2/DefaultBuild/
+/demo_App2/trash/

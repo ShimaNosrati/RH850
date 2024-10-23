@@ -34,6 +34,11 @@ Includes
 ***********************************************************************************************************************/
 #include "r_smc_entry.h"
 /* Start user code for include. Do not edit comment generated here */
+#include "base_macrodef.h"			// Basic macro definitions
+#include "can_drv.h"
+#include "r_rh850_can_sfr.h"
+#include "r_rh850_can_tx_table.h"
+#include "iodefine.h"
 /* End user code. Do not edit comment generated here */
 
 /***********************************************************************************************************************
@@ -53,6 +58,12 @@ void main(void)
 {
     r_main_userinit();
     /* Start user code for main. Do not edit comment generated here */
+    R_CAN_Tx_IRQ_init();
+    R_CAN_Init();
+    R_CAN_GlobalStart();
+    R_CAN_ChStart(0);
+
+    R_CAN_TrmByTxBuf(0,0,&tx_buf_table[0]);	/* Tx Buffer 0 transmission */
     /* End user code. Do not edit comment generated here */
 }
 
@@ -66,6 +77,7 @@ void r_main_userinit(void)
 {
     DI();
     /* Start user code for r_main_userinit. Do not edit comment generated here */
+    
     /* End user code. Do not edit comment generated here */
     R_Systeminit();
     EI();

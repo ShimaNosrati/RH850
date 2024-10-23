@@ -44,6 +44,20 @@ void R_Interrupt_Create(void)
 
 }
 
+void eiint297_enable_interrupt(void)
+{
+    /* Clear INTRCANGRECC0 request and enable operation */
+    INTC2.EIC297.BIT.EIRF297 = _INT_REQUEST_NOT_OCCUR;
+    INTC2.EIC297.BIT.EIMK297 = _INT_PROCESSING_ENABLED;
+}
+
+void eiint297_disable_interrupt(void)
+{
+    /* Disable INTRCANGRECC0 operation and clear request */
+    INTC2.EIC297.BIT.EIMK297 = _INT_PROCESSING_DISABLED;
+    INTC2.EIC297.BIT.EIRF297 = _INT_REQUEST_NOT_OCCUR;
+}
+
 void eiint302_enable_interrupt(void)
 {
     /* Clear INTRCAN1REC request and enable operation */
@@ -56,6 +70,20 @@ void eiint302_disable_interrupt(void)
     /* Disable INTRCAN1REC operation and clear request */
     INTC2.EIC302.BIT.EIMK302 = _INT_PROCESSING_DISABLED;
     INTC2.EIC302.BIT.EIRF302 = _INT_REQUEST_NOT_OCCUR;
+}
+
+void eiint303_enable_interrupt(void)
+{
+    /* Clear INTRCAN1TRX request and enable operation */
+    INTC2.EIC303.BIT.EIRF303 = _INT_REQUEST_NOT_OCCUR;
+    INTC2.EIC303.BIT.EIMK303 = _INT_PROCESSING_ENABLED;
+}
+
+void eiint303_disable_interrupt(void)
+{
+    /* Disable INTRCAN1TRX operation and clear request */
+    INTC2.EIC303.BIT.EIMK303 = _INT_PROCESSING_DISABLED;
+    INTC2.EIC303.BIT.EIRF303 = _INT_REQUEST_NOT_OCCUR;
 }
 
 void eiint308_enable_interrupt(void)
@@ -72,6 +100,20 @@ void eiint308_disable_interrupt(void)
     INTC2.EIC308.BIT.EIRF308 = _INT_REQUEST_NOT_OCCUR;
 }
 
+void eiint309_enable_interrupt(void)
+{
+    /* Clear INTRCAN3TRX request and enable operation */
+    INTC2.EIC309.BIT.EIRF309 = _INT_REQUEST_NOT_OCCUR;
+    INTC2.EIC309.BIT.EIMK309 = _INT_PROCESSING_ENABLED;
+}
+
+void eiint309_disable_interrupt(void)
+{
+    /* Disable INTRCAN3TRX operation and clear request */
+    INTC2.EIC309.BIT.EIMK309 = _INT_PROCESSING_DISABLED;
+    INTC2.EIC309.BIT.EIRF309 = _INT_REQUEST_NOT_OCCUR;
+}
+
 void eiint311_enable_interrupt(void)
 {
     /* Clear INTRCAN4REC request and enable operation */
@@ -86,6 +128,20 @@ void eiint311_disable_interrupt(void)
     INTC2.EIC311.BIT.EIRF311 = _INT_REQUEST_NOT_OCCUR;
 }
 
+void eiint312_enable_interrupt(void)
+{
+    /* Clear INTRCAN4TRX request and enable operation */
+    INTC2.EIC312.BIT.EIRF312 = _INT_REQUEST_NOT_OCCUR;
+    INTC2.EIC312.BIT.EIMK312 = _INT_PROCESSING_ENABLED;
+}
+
+void eiint312_disable_interrupt(void)
+{
+    /* Disable INTRCAN4TRX operation and clear request */
+    INTC2.EIC312.BIT.EIMK312 = _INT_PROCESSING_DISABLED;
+    INTC2.EIC312.BIT.EIRF312 = _INT_REQUEST_NOT_OCCUR;
+}
+
 void eiint320_enable_interrupt(void)
 {
     /* Clear INTRCAN7REC request and enable operation */
@@ -98,4 +154,18 @@ void eiint320_disable_interrupt(void)
     /* Disable INTRCAN7REC operation and clear request */
     INTC2.EIC320.BIT.EIMK320 = _INT_PROCESSING_DISABLED;
     INTC2.EIC320.BIT.EIRF320 = _INT_REQUEST_NOT_OCCUR;
+}
+
+void eiint321_enable_interrupt(void)
+{
+    /* Clear INTRCAN7TRX request and enable operation */
+    INTC2.EIC321.BIT.EIRF321 = _INT_REQUEST_NOT_OCCUR;
+    INTC2.EIC321.BIT.EIMK321 = _INT_PROCESSING_ENABLED;
+}
+
+void eiint321_disable_interrupt(void)
+{
+    /* Disable INTRCAN7TRX operation and clear request */
+    INTC2.EIC321.BIT.EIMK321 = _INT_PROCESSING_DISABLED;
+    INTC2.EIC321.BIT.EIRF321 = _INT_REQUEST_NOT_OCCUR;
 }

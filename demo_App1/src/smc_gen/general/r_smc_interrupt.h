@@ -671,14 +671,24 @@ Typedef definitions
 Global functions
 ***********************************************************************************************************************/
 void R_Interrupt_Create(void);
+void eiint297_enable_interrupt(void);
+void eiint297_disable_interrupt(void);
 void eiint302_enable_interrupt(void);
 void eiint302_disable_interrupt(void);
+void eiint303_enable_interrupt(void);
+void eiint303_disable_interrupt(void);
 void eiint308_enable_interrupt(void);
 void eiint308_disable_interrupt(void);
+void eiint309_enable_interrupt(void);
+void eiint309_disable_interrupt(void);
 void eiint311_enable_interrupt(void);
 void eiint311_disable_interrupt(void);
+void eiint312_enable_interrupt(void);
+void eiint312_disable_interrupt(void);
 void eiint320_enable_interrupt(void);
 void eiint320_disable_interrupt(void);
+void eiint321_enable_interrupt(void);
+void eiint321_disable_interrupt(void);
 /* Start user code for function. Do not edit comment generated here */
 /* End user code. Do not edit comment generated here */
 #endif
