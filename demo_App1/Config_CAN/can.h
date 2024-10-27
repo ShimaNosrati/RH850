@@ -14,15 +14,14 @@
 #define CAN_H
 
 /* ---- Device information: RH850/U2A ---- */
-#define MAX_CH_NUM                      2
+#define MAX_CH_NUM                      4
 #define USED_UNIT_NUM                   0
 
 #if USED_UNIT_NUM == 0
   #define CAN_START_ADDR                (0xFFF50000UL)
 #elif USED_UNIT_NUM == 1
-  #define CAN_START_ADDR                (0xFFFD0000UL)
+  #define CAN_START_ADDR                (0xFFD00000UL) /*Shima */
 #endif
-
 
 #define __CHECK__
 

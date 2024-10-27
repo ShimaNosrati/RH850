@@ -28,6 +28,12 @@
       <Type>Category</Type>
       <ParentItem>d7b6707e-0121-40df-be45-d96cbd1ae150</ParentItem>
     </Instance>
+    <Instance Guid="bddfc93b-cce8-44aa-ba98-6b5ea72d4796">
+      <Name>Config_CAN</Name>
+      <Type>Category</Type>
+      <ParentItem>d7b6707e-0121-40df-be45-d96cbd1ae150</ParentItem>
+      <Property>04587b96-9ff6-44e9-b0f8-7404bcf13423</Property>
+    </Instance>
     <Instance Guid="79e7ce35-5ba8-42a4-81f5-b5d05d9c94b5">
       <Name>general</Name>
       <Type>Category</Type>
@@ -176,11 +182,86 @@
       <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
       <ParentItem>8a3a414b-1923-42b8-859b-9f6d48cef200</ParentItem>
     </Instance>
+    <Instance Guid="bd3216be-f9ac-41b4-83b6-3f07b360a534">
+      <Name>can.c</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\can.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="d254b705-9154-4fac-aff6-6cf311642207">
+      <Name>can_drv.c</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\can_drv.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="62d9b6b4-6e7c-4472-8a58-60edf07995a9">
+      <Name>interrupt0.c</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\interrupt0.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="008e7bea-f324-4b56-911a-cf16bd4a31df">
+      <Name>r_can_int.c</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\r_can_int.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="d7d6d3bd-1ada-4f8c-8473-604e3ca8ca7c">
+      <Name>r_rh850_can_io.c</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\r_rh850_can_io.c</RelativePath>
+      <TreeImageGuid>941832c1-fc3b-4e1b-94e8-01ea17128b42</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="7608197d-8114-4420-a53e-0b6d558493c9">
+      <Name>base_macrodef.h</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\base_macrodef.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="fdd2c8c5-83c6-46ae-9638-461a5e802c2a">
+      <Name>can.h</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\can.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="43df8721-ee24-4bec-a3cc-8c9d011b403a">
+      <Name>can_drv.h</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\can_drv.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="a37356e3-22c1-44ab-aa76-e8337eb71f74">
+      <Name>r_rh850_can_sfr.h</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\r_rh850_can_sfr.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
+    <Instance Guid="3f0cb872-bd40-496b-a516-aad5a48eeb05">
+      <Name>r_rh850_can_tx_table.h</Name>
+      <Type>File</Type>
+      <RelativePath>Config_CAN\r_rh850_can_tx_table.h</RelativePath>
+      <TreeImageGuid>03cad1e8-2eb3-4cde-a8a3-982423631122</TreeImageGuid>
+      <ParentItem>bddfc93b-cce8-44aa-ba98-6b5ea72d4796</ParentItem>
+    </Instance>
   </Class>
   <Class Guid="fb98844b-2c27-4275-9804-f6e63e204da0">
     <Instance Guid="2a349cb6-b982-4ade-adcd-104b883ad81c">
       <TypeOfStorageOfUserSettings>UserMtudFile</TypeOfStorageOfUserSettings>
       <UseStandardLicenseOnly>True</UseStandardLicenseOnly>
+      <MemoCount>0</MemoCount>
+    </Instance>
+  </Class>
+  <Class Guid="78a5c5cd-76cb-4bcc-a031-3020011fbc9a">
+    <Instance Guid="04587b96-9ff6-44e9-b0f8-7404bcf13423">
       <MemoCount>0</MemoCount>
     </Instance>
   </Class>
@@ -254,7 +335,17 @@
       <SourceItemType10>CSource</SourceItemType10>
       <SourceItemGuid11>8f3dd4ad-7992-44d5-8f98-2d63329a99e8</SourceItemGuid11>
       <SourceItemType11>CSource</SourceItemType11>
-      <SourceItemCount>12</SourceItemCount>
+      <SourceItemGuid12>d7d6d3bd-1ada-4f8c-8473-604e3ca8ca7c</SourceItemGuid12>
+      <SourceItemType12>CSource</SourceItemType12>
+      <SourceItemGuid13>008e7bea-f324-4b56-911a-cf16bd4a31df</SourceItemGuid13>
+      <SourceItemType13>CSource</SourceItemType13>
+      <SourceItemGuid14>62d9b6b4-6e7c-4472-8a58-60edf07995a9</SourceItemGuid14>
+      <SourceItemType14>CSource</SourceItemType14>
+      <SourceItemGuid15>d254b705-9154-4fac-aff6-6cf311642207</SourceItemGuid15>
+      <SourceItemType15>CSource</SourceItemType15>
+      <SourceItemGuid16>bd3216be-f9ac-41b4-83b6-3f07b360a534</SourceItemGuid16>
+      <SourceItemType16>CSource</SourceItemType16>
+      <SourceItemCount>17</SourceItemCount>
       <LastDeviceChangedCounter>0</LastDeviceChangedCounter>
     </Instance>
     <Instance Guid="989d6783-59a0-4525-8ee4-a067fda90fe2">
@@ -488,10 +579,11 @@
       <COptionInsertDbtagWithLabelParameters-DefaultValue />
       <COptionXmultiLevel-DefaultValue>Level0</COptionXmultiLevel-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8584720138987449834</TimeTagModified--0>
+      <TimeTagModified--0>-8584719226651861298</TimeTagModified--0>
       <COptionChangeMessageError-0>No</COptionChangeMessageError-0>
       <COptionG-0>True</COptionG-0>
-      <COptionI-0>src\smc_gen\Config_PORT
+      <COptionI-0>Config_CAN
+src\smc_gen\Config_PORT
 src\smc_gen\r_pincfg
 src\smc_gen\general
 ..
@@ -695,7 +787,7 @@ src\smc_gen\general
       <LinkOptionLibraryLibMalloc-DefaultValue>False</LinkOptionLibraryLibMalloc-DefaultValue>
       <LinkOptionLibraryLibSetJmp-DefaultValue>False</LinkOptionLibraryLibSetJmp-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8584732828802219672</TimeTagModified--0>
+      <TimeTagModified--0>-8584719243536255021</TimeTagModified--0>
       <LinkOptionAllowOptimizeEntryBlock-0>False</LinkOptionAllowOptimizeEntryBlock-0>
       <LinkOptionCpu-0>False</LinkOptionCpu-0>
       <LinkOptionDebug-0>Debug</LinkOptionDebug-0>
@@ -906,7 +998,7 @@ src\smc_gen\general
       <LibOptionLibraryLibSetJmp-DefaultValue>False</LibOptionLibraryLibSetJmp-DefaultValue>
       <LibOptionAllowDuplicateModuleName-DefaultValue>False</LibOptionAllowDuplicateModuleName-DefaultValue>
       <IsLockedByUser>False</IsLockedByUser>
-      <TimeTagModified--0>-8584732828802219672</TimeTagModified--0>
+      <TimeTagModified--0>-8584719243536255021</TimeTagModified--0>
       <LibOptionDebug-0>Debug</LibOptionDebug-0>
       <LibOptionForm-0>LibraryU</LibOptionForm-0>
       <LibOptionInput-0 />
@@ -1066,6 +1158,46 @@ src\smc_gen\general
       <ItemAddTime>638652023868001159</ItemAddTime>
       <ItemAddTimeCount>0</ItemAddTimeCount>
     </Instance>
+    <Instance Guid="7608197d-8114-4420-a53e-0b6d558493c9">
+      <ItemAddTime>638652936202954404</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="fdd2c8c5-83c6-46ae-9638-461a5e802c2a">
+      <ItemAddTime>638652936202954404</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="43df8721-ee24-4bec-a3cc-8c9d011b403a">
+      <ItemAddTime>638652936202954404</ItemAddTime>
+      <ItemAddTimeCount>2</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="a37356e3-22c1-44ab-aa76-e8337eb71f74">
+      <ItemAddTime>638652936202954404</ItemAddTime>
+      <ItemAddTimeCount>3</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="3f0cb872-bd40-496b-a516-aad5a48eeb05">
+      <ItemAddTime>638652936202954404</ItemAddTime>
+      <ItemAddTimeCount>4</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="d7d6d3bd-1ada-4f8c-8473-604e3ca8ca7c">
+      <ItemAddTime>638652936049299622</ItemAddTime>
+      <ItemAddTimeCount>4</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="008e7bea-f324-4b56-911a-cf16bd4a31df">
+      <ItemAddTime>638652936049299622</ItemAddTime>
+      <ItemAddTimeCount>3</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="62d9b6b4-6e7c-4472-8a58-60edf07995a9">
+      <ItemAddTime>638652936049299622</ItemAddTime>
+      <ItemAddTimeCount>2</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="d254b705-9154-4fac-aff6-6cf311642207">
+      <ItemAddTime>638652936049299622</ItemAddTime>
+      <ItemAddTimeCount>1</ItemAddTimeCount>
+    </Instance>
+    <Instance Guid="bd3216be-f9ac-41b4-83b6-3f07b360a534">
+      <ItemAddTime>638652936049299622</ItemAddTime>
+      <ItemAddTimeCount>0</ItemAddTimeCount>
+    </Instance>
     <Instance Guid="149baf2a-1b8c-4f78-9702-3ac495e87f5a">
       <TimeTagModified-SourceItem0--0>-8584734114868979041</TimeTagModified-SourceItem0--0>
       <SourceItem0-IsLockedByUser>False</SourceItem0-IsLockedByUser>
@@ -1117,6 +1249,26 @@ src\smc_gen\general
       <SourceItem11-IsLockedByUser>False</SourceItem11-IsLockedByUser>
       <SourceItem11-IndividualCompileOption-0>False</SourceItem11-IndividualCompileOption-0>
       <SourceItem11-BuildingTarget-0>True</SourceItem11-BuildingTarget-0>
+      <TimeTagModified-SourceItem12--0>-8584719226805476186</TimeTagModified-SourceItem12--0>
+      <SourceItem12-IsLockedByUser>False</SourceItem12-IsLockedByUser>
+      <SourceItem12-IndividualCompileOption-0>False</SourceItem12-IndividualCompileOption-0>
+      <SourceItem12-BuildingTarget-0>True</SourceItem12-BuildingTarget-0>
+      <TimeTagModified-SourceItem13--0>-8584719226805476186</TimeTagModified-SourceItem13--0>
+      <SourceItem13-IsLockedByUser>False</SourceItem13-IsLockedByUser>
+      <SourceItem13-IndividualCompileOption-0>False</SourceItem13-IndividualCompileOption-0>
+      <SourceItem13-BuildingTarget-0>True</SourceItem13-BuildingTarget-0>
+      <TimeTagModified-SourceItem14--0>-8584719226805476186</TimeTagModified-SourceItem14--0>
+      <SourceItem14-IsLockedByUser>False</SourceItem14-IsLockedByUser>
+      <SourceItem14-IndividualCompileOption-0>False</SourceItem14-IndividualCompileOption-0>
+      <SourceItem14-BuildingTarget-0>True</SourceItem14-BuildingTarget-0>
+      <TimeTagModified-SourceItem15--0>-8584719226805476186</TimeTagModified-SourceItem15--0>
+      <SourceItem15-IsLockedByUser>False</SourceItem15-IsLockedByUser>
+      <SourceItem15-IndividualCompileOption-0>False</SourceItem15-IndividualCompileOption-0>
+      <SourceItem15-BuildingTarget-0>True</SourceItem15-BuildingTarget-0>
+      <TimeTagModified-SourceItem16--0>-8584719226805476186</TimeTagModified-SourceItem16--0>
+      <SourceItem16-IsLockedByUser>False</SourceItem16-IsLockedByUser>
+      <SourceItem16-IndividualCompileOption-0>False</SourceItem16-IndividualCompileOption-0>
+      <SourceItem16-BuildingTarget-0>True</SourceItem16-BuildingTarget-0>
     </Instance>
   </Class>
   <Class Guid="44fa27c9-0aa0-4297-bd3b-2c5c5bdb8881">

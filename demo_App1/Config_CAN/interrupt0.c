@@ -38,7 +38,7 @@ header include
 ******************************************************************************/
 #include "base_macrodef.h"			// Basic macro definitions
 #include "can_drv.h"
-#include "r_rh850_can_sfr.h"
+#include "can_sfr.h"
 #include "iodefine.h"
 /******************************************************************************
 Macro definitions

@@ -103,6 +103,18 @@
           <Path>src\smc_gen\Config_PORT\Config_PORT_user.c</Path>
         </Category>
       </Category>
+      <Category Name="Config_CAN">
+        <Path>Config_CAN\can.c</Path>
+        <Path>Config_CAN\can_drv.c</Path>
+        <Path>Config_CAN\interrupt0.c</Path>
+        <Path>Config_CAN\r_can_int.c</Path>
+        <Path>Config_CAN\r_rh850_can_io.c</Path>
+        <Path>Config_CAN\base_macrodef.h</Path>
+        <Path>Config_CAN\can.h</Path>
+        <Path>Config_CAN\can_drv.h</Path>
+        <Path>Config_CAN\r_rh850_can_sfr.h</Path>
+        <Path>Config_CAN\r_rh850_can_tx_table.h</Path>
+      </Category>
     </Files>
     <DebugOptions>
       <DebugTool>Simulator</DebugTool>
@@ -127,8 +139,14 @@
           <Path>DefaultBuild\Pin.obj</Path>
           <Path>DefaultBuild\Config_PORT.obj</Path>
           <Path>DefaultBuild\Config_PORT_user.obj</Path>
+          <Path>DefaultBuild\can.obj</Path>
+          <Path>DefaultBuild\can_drv.obj</Path>
+          <Path>DefaultBuild\interrupt0.obj</Path>
+          <Path>DefaultBuild\r_can_int.obj</Path>
+          <Path>DefaultBuild\r_rh850_can_io.obj</Path>
         </LinkOrder>
         <CommonOptions>
+          <IncludePathForC>Config_CAN</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_PORT</IncludePathForC>
           <IncludePathForC>src\smc_gen\r_pincfg</IncludePathForC>
           <IncludePathForC>src\smc_gen\general</IncludePathForC>
@@ -142,6 +160,7 @@
           <Option>-Xcpu=g4mh</Option>
           <Option>-g</Option>
           <Option>-g_line</Option>
+          <Option>-IConfig_CAN</Option>
           <Option>-Isrc\smc_gen\Config_PORT</Option>
           <Option>-Isrc\smc_gen\r_pincfg</Option>
           <Option>-Isrc\smc_gen\general</Option>

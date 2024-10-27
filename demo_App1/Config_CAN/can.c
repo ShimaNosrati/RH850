@@ -11,7 +11,7 @@
 * : 30.06.2022 	1.11 	Modified for RH850/U2A8
 ******************************************************************************/
 #include "can_drv.h"
-#include "r_rh850_can_sfr.h"
+#include "can_sfr.h"
 
 #if CAN_RX_RULE_NUM > 0
 const uint32_t g_rxrule_table[CAN_RX_RULE_NUM][4] = {

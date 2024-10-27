@@ -15,7 +15,7 @@
  Includes   <System Includes> , "Project Includes"
  *****************************************************************************/
 #include "can_drv.h"
-#include "r_rh850_can_sfr.h"
+#include "can_sfr.h"
 #include "iodefine.h"
 
 /*****************************************************************************
@@ -78,7 +78,7 @@ Can_RtnType R_CAN_Init(void)
 //    RSCFD0.CFDGRMCFG.UINT32 = 0x00000001;
 
     /* ==== channel mode switch ==== */
-    ptr_sfr1 = (volatile can_ch_sfr1_t *)&RSCFDnCFDCmNCFG(0);
+    ptr_sfr1 = (volatile can_ch_sfr1_t *)&RSCFDnCFDCmNCFG(4);
     for (ch_idx = 0; ch_idx < MAX_CH_NUM; ch_idx++)
     {
         if (g_ch_use_table[ch_idx] != CAN_NOUSE)
@@ -95,14 +95,14 @@ Can_RtnType R_CAN_Init(void)
     }
 
     /* configuration table */
-    p_top_cfg = &g_can_ch_cfg[0];
+    p_top_cfg = &g_can_ch_cfg[4];
 
     /* ==== global function setting ==== */
     RSCFDnCFDGCFG = CAN_CFG_GLB_CFG;
 
     /* ==== communication speed setting ==== */
-    ptr_sfr1 = (volatile can_ch_sfr1_t *)&RSCFDnCFDCmNCFG(0);
-	ptr_sfr2 = (volatile can_ch_sfr2_t *)&RSCFDnCFDCmDCFG(0);
+    ptr_sfr1 = (volatile can_ch_sfr1_t *)&RSCFDnCFDCmNCFG(4);
+	ptr_sfr2 = (volatile can_ch_sfr2_t *)&RSCFDnCFDCmDCFG(4);
     p_cfg = p_top_cfg;
     for (ch_idx = 0; ch_idx < MAX_CH_NUM; ch_idx++)
     {
@@ -184,9 +184,9 @@ Can_RtnType R_CAN_Init(void)
         volatile uint32_t * p_TXQCCm;
 
         p_cfg    = p_top_cfg;
-        p_CFCCk  = &RSCFDnCFDCFCCk(0, 0);
-        p_TMIEC  = &RSCFDnCFDTMIECy(0);
-        p_TXQCCm = &RSCFDnCFDTXQCC0m(0);
+        p_CFCCk  = &RSCFDnCFDCFCCk(4, 0);
+        p_TMIEC  = &RSCFDnCFDTMIECy(4);
+        p_TXQCCm = &RSCFDnCFDTXQCC0m(4);
         for (ch_idx = 0U; ch_idx < MAX_CH_NUM; ch_idx++)
         {
             if (g_ch_use_table[ch_idx] != CAN_NOUSE)
@@ -215,7 +215,7 @@ Can_RtnType R_CAN_Init(void)
                         CAN_CFG_GLB_ERR_INT;
 
     /* ==== channel function setting ==== */
-    ptr_sfr1 = (volatile can_ch_sfr1_t *)&RSCFDnCFDCmNCFG(0);
+    ptr_sfr1 = (volatile can_ch_sfr1_t *)&RSCFDnCFDCmNCFG(4);
     p_cfg = p_top_cfg;
     for (ch_idx = 0; ch_idx < MAX_CH_NUM; ch_idx++)
     {
@@ -261,7 +261,7 @@ Can_RtnType R_CAN_GlobalStart(void)
         volatile uint32_t * p_RFCCm;
         uint8_t  rxfifo_idx;
 
-        p_RFCCm = &RSCFDnCFDRFCCx(0);
+        p_RFCCm = &RSCFDnCFDRFCCx(4);
         p_use_value = &g_rxfifo_use_table[0];
         for (rxfifo_idx = 0; rxfifo_idx < CAN_MAX_RXFIFO_NUM; rxfifo_idx++)
         {
@@ -280,8 +280,8 @@ Can_RtnType R_CAN_GlobalStart(void)
         uint8_t ch_idx;
         uint8_t trfifo_idx;
 
-        p_CFCCk = &RSCFDnCFDCFCCk(0, 0);
-        p_use_value = &g_trfifo_use_table[0][0];
+        p_CFCCk = &RSCFDnCFDCFCCk(4, 0);
+        p_use_value = &g_trfifo_use_table[4][0];
         for (ch_idx = 0U; ch_idx < MAX_CH_NUM; ch_idx++)
         {
             if (g_ch_use_table[ch_idx] != CAN_NOUSE)

@@ -163,4 +163,4 @@ extern Can_RtnType R_CAN_ReadRxFIFO(can_rxfifo_t rxfifo_idx, can_frame_t* pFrame
 extern Can_RtnType R_CAN_ReadTRFIFO(can_ch_t ch_idx, can_trfifo_t trfifo_idx, can_frame_t* pFrame);
 extern Can_RtnType R_CAN_ReadChStatus(can_ch_t ch_idx);
 
-#endif /* R_RH850_CAN_DRV_H */
+#endif /* CAN_DRV_H */

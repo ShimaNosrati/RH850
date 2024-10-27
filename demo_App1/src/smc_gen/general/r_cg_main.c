@@ -36,8 +36,8 @@ Includes
 /* Start user code for include. Do not edit comment generated here */
 #include "base_macrodef.h"			// Basic macro definitions
 #include "can_drv.h"
-#include "r_rh850_can_sfr.h"
-#include "r_rh850_can_tx_table.h"
+#include "can_sfr.h"
+#include "can_tx_table.h"
 #include "iodefine.h"
 /* End user code. Do not edit comment generated here */
 
@@ -54,16 +54,23 @@ void r_main_userinit(void);
 * Arguments    : None
 * Return Value : None
 ***********************************************************************************************************************/
-void main(void)
+void main_pm0(void)
 {
     r_main_userinit();
     /* Start user code for main. Do not edit comment generated here */
-    R_CAN_Tx_IRQ_init();
+    R_Pins_Create();
+    /*
+    eiint303_enable_interrupt();
+    eiint309_enable_interrupt();
+    eiint312_enable_interrupt();
+    eiint321_enable_interrupt();
+*/
     R_CAN_Init();
     R_CAN_GlobalStart();
-    R_CAN_ChStart(0);
+    R_CAN_ChStart(4);
 
-    R_CAN_TrmByTxBuf(0,0,&tx_buf_table[0]);	/* Tx Buffer 0 transmission */
+    R_CAN_TrmByTxBuf(4,0,&tx_buf_table[0]);	/* Tx Buffer 0 transmission */
+    while(1);
     /* End user code. Do not edit comment generated here */
 }
 

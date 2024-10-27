@@ -2689,6 +2689,7 @@
         <pinItem allocation="D16" comments="" direction="None" id="CAN4TX" isUsedBySoftware="false" locked="false" operationMode="" status="0"/>
         <pinItem allocation="E20" comments="" direction="None" id="X1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="F20" comments="" direction="None" id="X2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="M19" comments="" direction="None" id="P6_10" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="N19" comments="" direction="None" id="P6_12" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="R19" comments="" direction="None" id="P6_6" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="C19" comments="" direction="None" id="P2_1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -3946,47 +3947,47 @@
                         </option>
                     </allocatable>
                     <allocatable id="PORTx10_Item">
-                        <option enabled="true" id="UseStatus" selection="Unuse">
+                        <option enabled="true" id="UseStatus" selection="Out">
                             <item id="Unuse" input="" vlaue="0"/>
                             <item id="In" input="" vlaue="0"/>
                             <item id="Out" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="bidirectional" selection="bidirectionalUnuse">
+                        <option enabled="true" id="bidirectional" selection="bidirectionalUnuse">
                             <item id="bidirectionalUnuse" input="" vlaue="0"/>
                             <item id="bidirectionalUse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Output1" selection="Output1Unuse">
+                        <option enabled="true" id="Output1" selection="Output1Unuse">
                             <item id="Output1Unuse" input="" vlaue="0"/>
                             <item id="Output1Use" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="OutputInverted" selection="OutputInvertUnuse">
+                        <option enabled="true" id="OutputInverted" selection="OutputInvertUnuse">
                             <item id="OutputInvertUnuse" input="" vlaue="0"/>
                             <item id="OutputInvertUse" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Safetrigger" selection="triggerItem">
+                        <option enabled="true" id="Safetrigger" selection="triggerItem">
                             <item id="triggerItem" input="" vlaue="0"/>
                             <item id="trigger0Item" input="" vlaue="0"/>
                             <item id="trigger1Item" input="" vlaue="0"/>
                             <item id="trigger2Item" input="" vlaue="0"/>
                             <item id="trigger3Item" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="resistorstatus" selection="resistorUnuse">
+                        <option enabled="false" id="resistorstatus" selection="resistorUnuse">
                             <item id="resistorUnuse" input="" vlaue="0"/>
                             <item id="resistorPullup" input="" vlaue="0"/>
                             <item id="resistorPulldown" input="" vlaue="0"/>
                         </option>
-                        <option enabled="true" id="inputbuffer" selection="shmt1Item">
+                        <option enabled="false" id="inputbuffer" selection="shmt1Item">
                             <item id="shmt1Item" input="" vlaue="0"/>
                             <item id="shmt4Item" input="" vlaue="0"/>
                             <item id="ttlItem" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="drivestrength" selection="StrengthItem0">
+                        <option enabled="true" id="drivestrength" selection="StrengthItem0">
                             <item id="StrengthItem0" input="" vlaue="0"/>
                             <item id="lowerItem" input="" vlaue="0"/>
                             <item id="StrengthItem2" input="" vlaue="0"/>
                             <item id="highItem" input="" vlaue="0"/>
                         </option>
-                        <option enabled="false" id="Opendrain" selection="opendrainUnUse">
+                        <option enabled="true" id="Opendrain" selection="opendrainUnUse">
                             <item id="opendrainUnUse" input="" vlaue="0"/>
                             <item id="opendrainUse" input="" vlaue="0"/>
                             <item id="PopendrainUse" input="" vlaue="0"/>

@@ -10,6 +10,8 @@
 * : 30.06.2022 	1.10 	Modified for RH850/U2A6
 * : 30.06.2022 	1.11 	Modified for RH850/U2A8
 ******************************************************************************/
+#ifndef CAN_TX_TABLE_H
+#define CAN_TX_TABLE_H
 
 #include "can_drv.h"
 #include "can.h"
@@ -36,3 +38,5 @@ can_frame_t tx_buf_table[2] = {
     0x23,0x45,0x67,0x89,0xab,0xcd,0xef,0x01,
     }, /* p=01 */
 };
+
+#endif /* CAN_TX_TABLE_H */

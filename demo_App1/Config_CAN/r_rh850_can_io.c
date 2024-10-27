@@ -33,7 +33,7 @@
 * : 30.06.2022 	1.10 	Modified for RH850/U2A6
 ******************************************************************************/
 #include "can_drv.h"
-#include "r_rh850_can_sfr.h"
+#include "can_sfr.h"
 #include "base_macrodef.h"
 #include "iodefine.h"
 

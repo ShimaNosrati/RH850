@@ -104,7 +104,7 @@ $endif
 	;or	r11, r10		; supervisor mode -> user mode
 	ldsr	r10, 3, 0		; FEPSW <- r10
 	mov	#_exit, lp		; lp <- #_exit
-	mov	#_main, r10
+	mov	#_main_pm0, r10
 	ldsr	r10, 2, 0		; FEPC <- #_main
 
 	; apply PSW and PC to start user mode
